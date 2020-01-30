@@ -1,0 +1,33 @@
+[
+    {
+        "id":1,
+        "name": "aaaa",
+        "price": 100,
+        "image":"/images/1.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+    },
+
+    {
+        "id":2,
+        "name": "bbbb",
+        "price": 100,
+        "image":"/images/2.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+    },
+      
+    {
+        "id":3,
+        "name": "cccc",
+        "price": 100,
+        "image":"/images/3.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+    },
+       
+    {"id":4,
+        "name": "dddd",
+        "price": 100,
+        "image":"/images/4.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+    }
+     
+    ]   
