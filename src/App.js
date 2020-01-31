@@ -5,6 +5,8 @@ import Cart from "./pages/Cart";
 import Navbar from "./pages/Navbar";
 import Product from "./pages/Product";
 import {BrowserRouter as Router,Route} from "react-router-dom";
+import {Provider} from "react-redux";
+import store from "./store/store";
 
 
 function App() {
@@ -22,4 +24,10 @@ function App() {
   );
 }
 
-export default App;
+function AppWithStore(){
+  return <Provider store={store}>
+    <App />
+  </Provider>
+}
+
+export default AppWithStore;
