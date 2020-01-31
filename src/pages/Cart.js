@@ -17,7 +17,7 @@ import {connect} from "react-redux";
             </div>
             )}
             </div>
-            <h3>Total: 3000</h3>
+           <h3>Total:{}</h3>
             <button class="btn btn-primary btn-block">Pay</button>
         </div>
 
