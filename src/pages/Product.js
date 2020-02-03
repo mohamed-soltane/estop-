@@ -23,14 +23,14 @@ import {connect} from "react-redux";
                 });
             })
         }
-        handleQuantity = (event) => {
-            const value = event.target.value;
-            if(value < 0)
+    handleQuantity = (event) => {
+        const value = event.target.value;
+        if(value < 0)
             return;
             this.setState({
                 quantity : value
             })
-        } 
+    } 
 
         addToCart = (product) => {
           this.props.addToCart(product, this.state.quantity)  
@@ -40,13 +40,12 @@ import {connect} from "react-redux";
     render(){
         if(this.state.loading)
             return 'Loading...';
-            const product = this.state.product;
-            const quantity = this.state.quantity;
+        const product = this.state.product;
+        const quantity = this.state.quantity;
 
         return(
             <div>
-                
-                <div className={'row'}>
+                 <div className={'row'}>
                     <div className ="col-6">
                         <img src={product.image} width={'90%'}/>
                     </div>
@@ -65,15 +64,9 @@ import {connect} from "react-redux";
 
                     <p>Total : {quantity * product.price}</p>
 
-                   
-
                     <button className = "btn btn-primary" onClick= {() => this.addToCart(product)}>
                         Add to Cart
                     </button>
-
-
-                   
-                        
                     </div>
                 </div>
             </div>
